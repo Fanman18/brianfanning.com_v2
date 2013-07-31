@@ -19,13 +19,18 @@ ini_set('display_startup_errors', TRUE);
         <meta name="viewport" content="width=device-width">
         
         <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
         
         <!-- Font Awesome -->
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        
+        <!-- Shadowbox -->
+        <link rel="stylesheet" type="text/css" href="js/shadowbox-3.0.3/shadowbox.css">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     

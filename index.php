@@ -21,10 +21,12 @@
             </nav>
 
             <select class="mobile-nav">
+
                 <option value="#top">About</option>
                 <option value="#portfolio">My Work</option>
                 <option value="#specialties">Specialties</option>
                 <option value="#tools">Tools</option>
+                
             </select>
 
             <div class="social-bar">
@@ -41,7 +43,7 @@
 
         <div id="top" class="right"> 
             
-            <section id="about" class="section about">
+            <section id="about" class="section about clearfix">
                 
                 <p>
                     <span class="nowrap">Hi, I make websites.</span><br /> 
@@ -50,25 +52,16 @@
             
             </section>
             
-            <section id="portfolio" class="section portfolio">
+            <section id="portfolio" class="section portfolio clearfix">
 
                 <h2 class="title">My Work</h2>
                 
-                <div class="grid">
-                    <a href="img/portfolio/TBM-screenshot.png" rel="shadowbox"><img src="img/portfolio/thumb_TBM-screenshot.png" alt="Screen Sample" class="shadow"><h3>TIMBER MART</h3></a>
-                    <a href="img/portfolio/golden-wedding-screenshot.png" rel="shadowbox"><img src="img/portfolio/thumb_golden-wedding-screenshot.png" alt="Screen Sample" class="shadow"><h3>Golden Wedding Whiskey</h3></a>
-                    <a href="img/portfolio/screen-sample.jpg" rel="shadowbox"><img src="img/portfolio/thumb_screen-sample.jpg" alt="Screen Sample" class="shadow"><h3>Sample Title</h3></a>
-                    <a href="img/portfolio/screen-sample.jpg" rel="shadowbox"><img src="img/portfolio/thumb_screen-sample.jpg" alt="Screen Sample" class="shadow"><h3>Sample Title</h3></a>
-                    <a href="img/portfolio/screen-sample.jpg" rel="shadowbox"><img src="img/portfolio/thumb_screen-sample.jpg" alt="Screen Sample" class="shadow"><h3>Sample Title</h3></a>
-                    <a href="img/portfolio/screen-sample.jpg" rel="shadowbox"><img src="img/portfolio/thumb_screen-sample.jpg" alt="Screen Sample" class="shadow"><h3>Sample Title</h3></a>
-                    <a href="img/portfolio/screen-sample.jpg" rel="shadowbox"><img src="img/portfolio/thumb_screen-sample.jpg" alt="Screen Sample" class="shadow"><h3>Sample Title</h3></a>
-                    <a href="img/portfolio/screen-sample.jpg" rel="shadowbox"><img src="img/portfolio/thumb_screen-sample.jpg" alt="Screen Sample" class="shadow"><h3>Sample Title</h3></a>
-                </div>
+                <div id="work" class="grid"></div>
 
             </section>
 
 
-            <section id="specialties" class="section specialties">
+            <section id="specialties" class="section specialties clearfix">
 
                 <h2 class="title">Specialties</h2>
                 
@@ -80,7 +73,7 @@
             </section>
 
 
-            <section id="tools" class="section tools">
+            <section id="tools" class="section tools clearfix">
 
                 <h2 class="title">Tools</h2>
                 

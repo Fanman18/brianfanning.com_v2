@@ -1,0 +1,26 @@
+{"sites":[
+        {
+            "sitename":"TIMBER MART",
+            "url":"http://timbermart.ca",
+            "img":"TBM-screenshot.png",
+            "thumb":"thumb_TBM-screenshot.png",
+            "copy":"Some text here.",
+            "category":"revolve"
+        },
+        {
+            "sitename":"Golden Wedding Whiskey",
+            "url":"http://goldenwedding.ca",
+            "img":"golden-wedding-screenshot.png",
+            "thumb":"thumb_golden-wedding-screenshot.png",
+            "copy":"Some text here.",
+            "category":"revolve"
+        },
+        {
+            "sitename":"Climate Technical Gear",
+            "url":"http://climatetechnicalgear.ca",
+            "img":"climate-screenshot.jpg",
+            "thumb":"thumb_climate-screenshot.png",
+            "copy":"Some text here.",
+            "category":"revolve"
+        }
+]}

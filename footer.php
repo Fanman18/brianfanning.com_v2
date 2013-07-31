@@ -2,7 +2,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
+        
         
         <!-- Scrolly Goodness -->
 
@@ -11,13 +11,12 @@
 
 
         <!-- Shadowbox -->
-
-        <link rel="stylesheet" type="text/css" href="js/shadowbox-3.0.3/shadowbox.css">
         <script type="text/javascript" src="js/shadowbox-3.0.3/shadowbox.js"></script>
         <script type="text/javascript">
             Shadowbox.init();
         </script>
 
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

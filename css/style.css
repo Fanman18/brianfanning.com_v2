@@ -19,8 +19,7 @@ textarea {
 }
 
 body {
-    font-size: 1em;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
     color: #818181;
 }
 
@@ -94,6 +93,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body {
+    height: 100%;
+}
 
 /*******
 
@@ -106,8 +108,10 @@ a {
     color: #818181;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color:#ff8500;
+    text-decoration: none;
 }
 
 .left {
@@ -128,7 +132,7 @@ nav {
 }
 
 div.logo img {
-    width: 100%;
+    width: 90%;
     height: auto;
     opacity: 0.6;
 }
@@ -138,15 +142,22 @@ div.logo img:hover {
 }
 
 nav {
+    height: 39%;
     text-align: right;
 }
 
 nav a {
-    width: 80%;
     display: block;
+    padding: 0.25em 0.75em;
     text-decoration: none;
     margin: 0 0 1em 1.5em;
-    line-height: 1.5em;
+    line-height: 1em;
+    font-size: 1.4em;
+    outline: none;
+}
+
+nav a:hover {
+    color: #ff8500;
 }
 
 select.mobile-nav {
@@ -155,8 +166,14 @@ select.mobile-nav {
 
 div.social-bar a {
     display: inline-block;
+    width: 13%;
     margin: 0 0.6em;
     text-align: center;
+    color: #c1c3c4;
+}
+
+div.social-bar a:hover {
+    color: #ff8500;
 }
 
 /*******
@@ -172,7 +189,8 @@ nav a,
 div.social-bar a,
 div.logo img,
 div.grid a,
-div.grid a img {
+div.grid a img,
+div.grid-info {
     -webkit-transition: all 0.15s linear;
     transition: all 0.15s linear;
 }
@@ -184,100 +202,64 @@ div.grid a img {
 
 ********/
 
-.right{
+
+.right {
     float: right;
     width: 60%;
-    margin: 0 2% 0 0;
-    padding:3em 0;
+    height: 100%;
 }
 
 section {
-    margin-top: 4em;
+    padding: 5%;
+    min-height: 90%;
 }
 
-.title {
+h2.title {
     margin: 0 0 1em;
     padding: 0.25em 0;
     border-bottom: 1px dotted #818181;
     font-weight: 200;
     font-size: 3em;
-    text-transform: uppercase;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
 }
+
+section.about {
+    padding-top: 36.5%;
+} 
 
 .about p {
     line-height: 1.7em;
-    font-size: 1.4em;
+    font-size: 2.4em;
     font-weight: 200;
 }
 
-div.grid a {
-    position: relative;
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    margin-bottom: 0.5em;
-    overflow: hidden;
+.about span {
+    font-family: 'Droid Serif', serif;
 }
 
-div.grid a:hover {
-    top:-5px;
-    z-index: 999;
-    box-shadow: 0 1px 10px #333;
+.about span:first-child {
+    font-size: 1.8em;
 }
 
-div.grid a:active {
-    top:-2px;
-    box-shadow: none;
-}
-
-div.grid a img {
-    position: relative;
-    width: 100%;
-    opacity: 0.9;
-    height:auto;
-}
-
-div.grid a:hover img {
-    width: 101%;
-    right: 1px;
-    opacity: 1;
-}
-
-div.grid a:active img {
-    position: relative;
-    width: 99%;
-    margin-left:1px;
-}
-
-div.grid a h3 {
-    display: none;
-    position: absolute;
-    padding-left: 0.5em;
-    bottom: 0;
-    line-height: 2em;
-    font-size: 0.9em;
-    font-weight: 200;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-div.grid a:hover h3 {
-    display: block;
-    width: 100%;
+.about span:last-child {
+    color: #c1c3c4;
 }
 
 span.specialty {
     display: inline-block;
     margin: 0 2em 2em 0;
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: 200;
+    font-family: 'Droid Serif', serif;
     text-align: left;
     white-space: nowrap;
+    color: #c1c3c4;
 }
 
 .tools a {
     display: inline-block;
-    width: 40%;
+    width: 60%;
     margin: 0 auto 2em;
 }
 
@@ -293,7 +275,61 @@ footer {
     font-size: 0.9em;
 }
 
+.grid ul {
+    margin: 0;
+    padding: 0;
+}
 
+.grid ul li {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    margin: 0 2% 2% 0;
+    border: 1px solid #818181;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-info {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.grid ul li:hover {
+    cursor: pointer;
+}
+
+.grid ul li:hover .grid-info {
+    position: absolute;
+    top: 0px;
+    display: block;
+}
+
+.grid-info h3 {
+    font-family: 'Droid Serif', serif;
+    font-size: 1.6em;
+    color: #fff;
+}
+
+.grid-info a {
+    display: block;
+    width: 40%;
+    margin: 5% auto 0;
+    padding:0.25em 0.5em;
+    background: #ff8500;
+    color: #fff;
+}
+
+.grid-info a:hover {
+    background: #fff;
+    color: #ff8500;
+}
 
 .nowrap {
     white-space: nowrap;
@@ -307,6 +343,15 @@ footer {
     box-shadow: 0 1px 6px #666;
 }
 
+i.tag {
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    right:0;
+    bottom:0;
+    background: url(../img/revolve-tag.png) no-repeat;
+}
 
 
 
@@ -416,16 +461,24 @@ footer {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     
+    section.about {
+        padding-top: 50.5%;
+    }
+
     .about p {
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
 
     .right {
-        width: 50%;
+        width: 55%;
     }
 
-    div.grid a { 
-        width: 44%; 
+    .grid {
+        padding: 10px 10px 100px 10px;
+    }
+    .grid li {
+        width: 100%;
+        min-width: 380px;
     }
 
 }
@@ -437,21 +490,36 @@ footer {
 @media only screen and (min-width : 320px) and (max-width : 480px)  {
     
     .left {
+        border: 1px solid red;
+    }
+
+    .left,
+    .right {
         position: relative;
         float: none;
         width: 95%;
+        height: auto;
     }
 
-    .right {
-        width: 95%;
-    }
-
-    div.grid {
+    div.logo {
+        width: 100%;
+        max-width: 0;
         text-align: center;
     }
 
-    div.grid a { 
-        width: 90%; 
+    div.logo img {
+        width: 80%;
+        height: auto;
+        opacity: 0.6;
+    }
+
+    .grid {
+        padding: 10px 10px 100px 10px;
+    }
+
+    .grid li {
+        width: 100%;
+        min-width: 300px;
     }
 
     .mobile-nav {
@@ -545,3 +613,4 @@ footer {
         page-break-after: avoid;
     }
 }
+
